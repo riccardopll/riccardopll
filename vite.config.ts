@@ -1,8 +1,9 @@
 import { cloudflare } from "@cloudflare/vite-plugin";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite-plus";
 
 export default defineConfig({
-  plugins: [cloudflare()],
+  plugins: [tailwindcss(), cloudflare()],
   staged: {
     "*": "vp check --fix",
   },
