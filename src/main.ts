@@ -19,7 +19,7 @@ if (app) {
       <article class="mx-auto flex min-h-[calc(100svh-5rem)] w-full max-w-2xl flex-col justify-center">
         <header class="mb-12 flex flex-wrap items-end justify-between gap-x-8 gap-y-3">
           <div>
-            <h1 class="text-3xl font-medium tracking-normal text-white">
+            <h1 class="text-2xl font-medium tracking-normal text-white sm:text-3xl">
               Riccardo Palleschi
             </h1>
             <p class="mt-1 text-sm text-(--color-muted)">
@@ -41,7 +41,7 @@ if (app) {
 
         <section class="space-y-5 text-base leading-7 text-(--color-text)">
           <p>
-            I got into programming early through Minecraft plugins, GTA V modding, jailbroken iPods, rooted Androids and whatever made me curious at the time. I was always more interested in changing how things worked than using them the way they came.
+            I got into programming early through Minecraft plugins, GTA V modding, a jailbroken iPod, rooted Androids and whatever made me curious at the time. I was always more interested in changing how things worked than using them the way they came.
           </p>
           <p>
             Today I work at <a class="text-link" href="https://leitha.eu/" target="_blank" rel="noreferrer">Leithà</a> on the backend of an insurtech app used by more than 70k clients. I work on normal product features, bugs, infrastructure, stability, performance and cost reduction.
