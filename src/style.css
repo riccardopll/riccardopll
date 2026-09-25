@@ -71,3 +71,30 @@ a {
 .link:focus-visible .link-icon {
   transform: rotate(10deg);
 }
+
+.link:focus-visible,
+.text-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-link,
+  .link,
+  .link-icon {
+    transition: none;
+  }
+
+  .link:hover .link-icon,
+  .link:focus-visible .link-icon {
+    transform: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .link-icon {
+    forced-color-adjust: none;
+    background: LinkText;
+  }
+}
