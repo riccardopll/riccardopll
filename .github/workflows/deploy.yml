@@ -11,12 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: voidzero-dev/setup-vp@v1
+      - uses: voidzero-dev/setup-vp@v1.21.1
         with:
           node-version: "24"
           cache: true
       - run: vp install
       - run: vp check
+      - run: vp test
       - run: vp build
 
   deploy:
@@ -28,7 +29,7 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v7
-      - uses: voidzero-dev/setup-vp@v1
+      - uses: voidzero-dev/setup-vp@v1.21.1
         with:
           node-version: "24"
           cache: true
